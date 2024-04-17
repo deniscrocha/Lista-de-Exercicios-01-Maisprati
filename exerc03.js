@@ -8,12 +8,17 @@ dos primeiros três inteiros.
 */
 const prompt = require("prompt-sync")();
 
-let num1 = parseInt(prompt("Insira um número inteiro:"));
-let num2 = parseInt(prompt("Insira mais um número inteiro:"));
-let num3 = parseInt(prompt("Insira um último número inteiro:"));
-let num4 = num1+num2+num3;
+let num1 = parseInt(prompt("Insira um número inteiro: "));
+let num2 = parseInt(prompt("Insira um segundo número inteiro: "));
+let num3 = parseInt(prompt("Insira um terceiro número inteiro: "));
+let num4 = parseInt(prompt("Insira um quarto número inteiro: "));
 
-console.log(`O primeiro número somando 25 fica: ${num1+25}`);
-console.log(`O segundo número triplicado fica: ${num2*3}`); 
-console.log(`12% do terceiro número é: ${(12*100)/num3}`);
+num4 = num1+num2+num3;
+num1 += 25;
+num2 *= 3;
+num3 = (12*num3) / 100;
+
+console.log(`O primeiro número somando 25 fica: ${num1}`);
+console.log(`O segundo número triplicado fica: ${num2}`); 
+console.log(`12% do terceiro número é: ${num3}`);
 console.log(`A soma dos três valores originais é: ${num4}`);

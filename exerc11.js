@@ -10,12 +10,14 @@ let numero;
 do{
     console.log("Para sair do programa insira um número negativo ou nulo");
     numero = prompt("Insira um número: ");
-    if(numero>0){
-        if((numero%2)=== 0){
-            console.log("O número inserido é PAR.");
-        } else{
-            console.log("O número inserido é ÍMPAR.");
-        }
+    if(numero < 0){
+        break;
+    }else if((numero%2)=== 0){
+        console.log("O número inserido é PAR.");
+    } else if((numero%2)===1){
+        console.log("O número inserido é ÍMPAR.");
+    } else if(isNaN(numero)){
+        break;
     }
-} while(numero > 0)
+} while(numero >= 0)
 console.log("Código encerrado");

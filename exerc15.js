@@ -11,9 +11,11 @@ let somaNumero = 0;
 let somaPeso = 0;
 
 while(numero !== 0){
-    numero = parseFloat(prompt("Digite um número decimal: "));
-    if(numero !== 0){
-        peso = parseFloat(prompt("Digite o peso do último número digitado: "));
+    numero = parseFloat(prompt("Digite um número decimal (ou 0 para sair): "));
+    peso = parseFloat(prompt("Digite o peso do último número digitado (ou 0 para sair): "));
+    if(numero === 0 || peso === 0){
+        break;
+    } else{
         somaNumero += numero * peso;
         somaPeso += peso;
     }

@@ -14,7 +14,9 @@ Estamos utilizando o NodeJS para executar os programas em nosso computador fora 
 ## Detalhes Técnicos e Guia de Instalação
 Para executar os exercícios é necessário instalar o NodeJS.
 Após isso, será necessário clonar o repositório em sua máquina.
-Entrando na pasta com o terminal é só usar o comando node + nomeDoExercício.js
+Entrando na pasta com o terminal será necessário instalar o prompt-sync
+Para instalar o pacote basta usar o comando "npm i prompt-sync"
+Para executar os exercícios usar o comando node + nomeDoExercício.js
 "node exerc01.js", e o exercício selecionado será executado.
 Quase todos os exercícios precisam de entradas do usuário, as exceções são os exercícios 12 e 16.
 
